@@ -797,7 +797,7 @@ Projects.initDB = function()
 		// get projects
 		try
 		{
-			projects = TiDev.db.execute("SELECT * FROM PROJECTS");
+			projects = TiDev.db.execute("SELECT * FROM PROJECTS ORDER BY name");
 		}
 		catch(e)
 		{
