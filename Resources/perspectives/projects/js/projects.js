@@ -735,7 +735,7 @@ Projects.showAuthenticatedView = function(options)
 			$MQ('l:tidev.projects.row_selected',{'project_id':newProjectIndex,'activeTab':TiDev.activeSubtab.name});
 		});
 		*/
-		$('#projects_selector').click(function()
+		$('#projects_selector').change(function()
 		{
 			var newProjectIndex = $(this).attr('value');
 			Projects.setActiveProject(newProjectIndex);
